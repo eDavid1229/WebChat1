@@ -1,0 +1,116 @@
+*
+{
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background: #c4dfff;
+}
+body > .container
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+header
+{
+    padding:10px;
+    background: #7a95b4;
+}
+
+    h1
+    {
+        font-size: 105%;
+        text-align: center;
+        margin: 0;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.75);
+    }
+    ul.messages
+    {
+        flex-grow: 1;
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        scroll-behavior: smooth;
+    }
+        ul.messages li
+        {
+            margin: 10px 15px;
+            opacity: 1;
+            transition: 1s;
+        }
+        ul.messages li.hidden
+        {
+            opacity: 0;
+        }
+        ul.messages li div
+        {
+            display: inline-block;
+            border-radius: 10px;
+            padding: 15px;
+            padding-bottom: 5px;
+            background: #fff;
+        }
+            ul.messages li strong
+            {
+                color:#333;
+                margin-bottom: 5px;
+                display: block;
+            }
+            ul.messages li p
+            {
+                color: #666;
+            }
+form
+{
+    display: flex;
+    padding: 0 2.5px;
+    background: #aec9e8;
+}
+    form input
+    {
+        border: 0;
+        padding: 8px;
+        font-size: 102%;
+        flex-grow: 1;
+        margin: 5px 2.5px;
+    }
+    #name
+    {
+        width: 150px;
+        flex-grow: 0;
+    }
+    form ipnut,
+    form button
+    {
+        outline: none;
+    }
+    form button
+    {
+        margin: 5px;
+        border: 0;
+        background: #7a95b4;
+        color: rgba(255, 255, 255, 0.75);
+        cursor: pointer;
+        font-size: 105%;
+        width: 80px;
+    }
+    form button:hover
+    {
+        background: #61758d;
+        color:#fff ;
+    }
